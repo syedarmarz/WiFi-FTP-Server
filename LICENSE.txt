@@ -1,0 +1,106 @@
+PROPRIETARY SOFTWARE LICENSE
+
+Project: WiFi FTP Server
+Copyright (c) 2026 Syed Armarz
+All rights reserved.
+
+This is a proprietary license, not an open-source license. Please read these
+terms before downloading, installing, or using the Software.
+
+1. DEFINITIONS
+
+"Software" means the official WiFi FTP Server application and the project
+materials supplied by the copyright owner, including source code, compiled
+binaries, documentation, graphics, and related files.
+
+"Copyright Owner" means Syed Armarz.
+
+2. PERMISSION FOR PERSONAL USE
+
+Subject to your compliance with this License, the Copyright Owner grants you
+a limited, personal, non-exclusive, non-transferable, non-sublicensable,
+royalty-free permission to download, install, and run the official, unmodified
+APK release of the Software for your own personal, non-commercial use.
+
+You may make the copies technically necessary to download and install the
+official APK on devices that you own or control. This permission does not
+allow you to give copies to other people or make the Software available to
+others.
+
+3. RESTRICTIONS
+
+Unless the Copyright Owner gives you prior written permission, you may not,
+except where applicable law does not allow the restriction:
+
+- Copy, modify, adapt, translate, or create derivative works of the Software
+  or any part of its source code.
+- Publish, distribute, share, sublicense, sell, rent, lease, or otherwise make
+  the Software or its source code available to another person or organization.
+- Use or distribute the Software for commercial purposes.
+- Reuse or incorporate any part of the source code into another project,
+  product, or service.
+- Remove or alter copyright, attribution, or proprietary notices.
+- Claim or imply that you own the Software or created it.
+- Reverse engineer, decompile, or disassemble the Software, except to the
+  extent that applicable law gives you a right that cannot legally be
+  restricted.
+
+4. OWNERSHIP
+
+The Software is licensed, not sold. The Copyright Owner retains all rights,
+title, and interest in the Software and all associated intellectual property
+rights. No rights are granted except the limited personal-use permission in
+Section 2 and any rights that cannot legally be restricted.
+
+5. PUBLIC GITHUB REPOSITORIES
+
+If the Software or project materials are posted in a public GitHub repository,
+GitHub's Terms of Service grant GitHub users certain rights to view and fork
+public repository content through GitHub. Those platform rights are governed
+by GitHub's Terms of Service. This License does not grant any additional right
+to use, modify, or distribute the Software or source code outside the rights
+provided by GitHub's platform terms and the limited personal-use permission
+in Section 2.
+
+6. TERMINATION
+
+This License remains in effect until it is terminated. It will terminate
+automatically if you materially violate its terms. When it terminates, you
+must stop using the Software and delete copies in your possession or control,
+except where applicable law requires otherwise.
+
+7. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY. TO THE MAXIMUM
+EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT OWNER DISCLAIMS ALL
+WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE COPYRIGHT OWNER DOES NOT
+WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE, UNINTERRUPTED, SECURE, OR
+COMPATIBLE WITH ANY PARTICULAR DEVICE OR SOFTWARE.
+
+8. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT OWNER WILL
+NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY,
+OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF DATA, PROFITS, REVENUE, BUSINESS, OR
+GOODWILL, ARISING FROM OR RELATING TO THE SOFTWARE OR THIS LICENSE.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT OWNER'S TOTAL
+LIABILITY FOR ALL CLAIMS RELATING TO THE SOFTWARE OR THIS LICENSE WILL NOT
+EXCEED THE AMOUNT YOU PAID, IF ANY, TO OBTAIN THE OFFICIAL RELEASE.
+
+9. LEGAL RIGHTS
+
+Nothing in this License excludes, limits, or waives any right or remedy that
+cannot legally be excluded, limited, or waived under applicable law.
+
+10. ACCEPTANCE
+
+By downloading, installing, or using the Software, you acknowledge that you
+have read and agree to this License. If you do not agree, do not download,
+install, or use the Software, and delete any copy in your possession.
+
+For permission beyond the personal-use rights granted by this License, contact
+the Copyright Owner and obtain written permission before engaging in the
+restricted activity.
