@@ -3,177 +3,249 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f8f7">
-  <meta name="description" content="WiFi FTP Server makes it easy to transfer files between your Android phone and other devices over Wi-Fi.">
-  <title>WiFi FTP Server</title>
+  <meta name="theme-color" content="#f3f7f6">
+  <meta name="description" content="WiFi FTP Server for Android makes wireless file transfers simple. Share files between your phone and other devices over Wi-Fi with FTP or FTPS.">
+  <meta name="keywords" content="WiFi FTP Server, Android FTP server, wireless file transfer, FTP, FTPS, Android file sharing">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://syedarmarz.github.io/WiFi-FTP-Server/">
   <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="WiFi FTP Server">
+  <meta property="og:title" content="WiFi FTP Server for Android — Wireless File Transfer">
+  <meta property="og:description" content="Move files between your Android phone and other devices over Wi-Fi. Simple FTP and FTPS file sharing.">
+  <meta property="og:url" content="https://syedarmarz.github.io/WiFi-FTP-Server/">
+  <meta property="og:image" content="https://syedarmarz.github.io/WiFi-FTP-Server/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="WiFi FTP Server Android app for wireless file sharing">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WiFi FTP Server for Android">
+  <meta name="twitter:description" content="Wireless file transfer between Android and other devices using FTP or FTPS.">
+  <meta name="twitter:image" content="https://syedarmarz.github.io/WiFi-FTP-Server/assets/og-image.png">
+  <title>WiFi FTP Server for Android | Wireless File Transfer</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "WiFi FTP Server",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Android 8.0 and later",
+    "description": "Transfer files between an Android phone and other devices over Wi-Fi using FTP or FTPS.",
+    "url": "https://syedarmarz.github.io/WiFi-FTP-Server/",
+    "downloadUrl": "https://github.com/syedarmarz/WiFi-FTP-Server/releases/download/v1.0.0/WiFi-FTP-Server.apk",
+    "image": "https://syedarmarz.github.io/WiFi-FTP-Server/assets/og-image.png",
+    "author": {"@type": "Person", "name": "Syed Armarz", "url": "https://github.com/syedarmarz"}
+  }
+  </script>
   <style>
     :root {
       color-scheme: light;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #172a2d;
-      background: #f5f8f7;
-      font-synthesis: none;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      --bg: #f3f7f6;
+      --text: #102b34;
+      --muted: #607783;
+      --teal: #11858a;
+      --teal-dark: #08777d;
+      --line: #d8e4e2;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
-      min-height: 100vh;
       margin: 0;
-      padding: 64px 22px 48px;
-      background:
-        radial-gradient(ellipse at 50% 0%, rgba(20, 132, 137, .10), transparent 34rem),
-        #f5f8f7;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
     }
-    main { width: min(100%, 760px); margin: 0 auto; }
+    a { color: inherit; }
+    .page {
+      width: min(760px, calc(100% - 40px));
+      margin: 0 auto;
+    }
     .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 66px 0 38px;
       text-align: center;
-      padding: 8px 0 42px;
     }
     .app-icon {
       display: block;
-      width: 104px;
-      height: 104px;
-      border-radius: 27px;
-      box-shadow: 0 12px 30px rgba(13, 91, 96, .15);
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 28px rgba(24, 91, 91, .13);
     }
     h1 {
-      margin: 22px 0 9px;
-      color: #142729;
-      font-size: clamp(29px, 6vw, 38px);
-      line-height: 1.12;
+      margin: 0;
+      font-size: clamp(29px, 5vw, 35px);
+      line-height: 1.2;
       letter-spacing: -.045em;
-      font-weight: 750;
+      font-weight: 780;
     }
     .intro {
-      max-width: 410px;
-      margin: 0;
-      color: #5d7071;
-      font-size: 16px;
-      line-height: 1.65;
+      max-width: 430px;
+      margin: 10px auto 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.75;
     }
     .download {
-      min-height: 54px;
+      display: flex;
       width: min(100%, 310px);
-      margin-top: 25px;
-      display: inline-flex;
+      min-height: 54px;
+      margin: 24px auto 0;
       align-items: center;
       justify-content: center;
       gap: 10px;
-      padding: 0 22px;
-      border: 1px solid #0f777d;
-      border-radius: 13px;
-      background: #117f84;
+      border-radius: 12px;
+      background: var(--teal);
       color: #fff;
+      font-size: 14px;
+      font-weight: 750;
       text-decoration: none;
-      font-size: 16px;
-      font-weight: 700;
-      box-shadow: 0 8px 20px rgba(17, 127, 132, .16);
-      transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+      box-shadow: 0 10px 22px rgba(17, 133, 138, .15);
+      transition: background .16s ease, transform .16s ease, box-shadow .16s ease;
     }
     .download:hover {
-      background: #0d6e73;
+      background: var(--teal-dark);
+      box-shadow: 0 12px 25px rgba(17, 133, 138, .2);
       transform: translateY(-1px);
-      box-shadow: 0 11px 24px rgba(17, 127, 132, .20);
     }
-    .download:focus-visible, .more-link:focus-visible {
-      outline: 3px solid #55bfc0;
-      outline-offset: 4px;
+    .download svg { width: 19px; height: 19px; flex: none; }
+    .star-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 13px;
     }
-    .download svg { flex: none; }
-    .more-link {
-      margin-top: 15px;
-      color: #16777b;
-      font-size: 14px;
+    .star-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 32px;
+      padding: 6px 11px;
+      border: 1px solid #cbdedb;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .55);
+      color: var(--teal-dark);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+      transition: border-color .16s ease, background .16s ease, transform .16s ease;
+    }
+    .star-button svg { width: 14px; height: 14px; flex: none; }
+    .star-button:hover {
+      border-color: var(--teal);
+      background: #fff;
+      transform: translateY(-1px);
+    }
+    .more {
+      display: block;
+      width: fit-content;
+      margin: 12px auto 0;
+      color: var(--teal-dark);
+      font-size: 13px;
       font-weight: 600;
       text-decoration: none;
     }
-    .more-link:hover { color: #0d555a; text-decoration: underline; }
-    .details {
+    .more:hover, .repo:hover, .credit a:hover { text-decoration: underline; }
+    .about {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      padding-top: 25px;
-      border-top: 1px solid #dce7e4;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--line);
+      padding: 23px 0 22px;
+      scroll-margin-top: 20px;
     }
-    .details section {
-      min-height: 122px;
-      padding: 20px 21px;
-      border: 1px solid #e0e9e7;
-      border-radius: 15px;
-      background: rgba(255, 255, 255, .76);
+    .about section { padding: 0 30px 0 20px; }
+    .about section:first-child { padding-left: 20px; }
+    .about section + section {
+      border-left: 1px solid var(--line);
+      padding: 0 20px 0 30px;
     }
     h2 {
       margin: 0 0 8px;
-      color: #203638;
       font-size: 15px;
-      line-height: 1.35;
+      line-height: 1.4;
+      letter-spacing: -.015em;
       font-weight: 750;
-      letter-spacing: -.01em;
     }
-    .details p {
+    .about p {
       margin: 0;
-      color: #617475;
-      font-size: 13px;
-      line-height: 1.65;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.75;
     }
     footer {
-      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 7px 15px;
+      padding: 5px 0 34px;
+      color: #829398;
+      font-size: 11.5px;
       text-align: center;
-      color: #829392;
-      font-size: 12px;
     }
+    .repo, .credit a {
+      color: var(--teal-dark);
+      text-decoration: none;
+    }
+    .credit { white-space: nowrap; }
+    .heart { color: #ed4c78; }
+    a:focus-visible { outline: 3px solid rgba(17, 133, 138, .35); outline-offset: 4px; border-radius: 5px; }
     @media (max-width: 560px) {
-      body { padding: 38px 18px 32px; }
-      .hero { padding-bottom: 32px; }
-      .app-icon { width: 96px; height: 96px; border-radius: 24px; }
-      .details { grid-template-columns: 1fr; gap: 10px; padding-top: 19px; }
-      .details section { min-height: 0; padding: 17px 18px; }
+      .page { width: min(100% - 36px, 420px); }
+      .hero { padding: 48px 0 32px; }
+      .app-icon { width: 88px; height: 88px; border-radius: 22px; margin-bottom: 19px; }
+      .intro { font-size: 13.5px; }
+      .about { grid-template-columns: 1fr; padding: 4px 0 8px; }
+      .about section, .about section:first-child { padding: 20px 5px; }
+      .about section + section { border-left: 0; border-top: 1px solid var(--line); padding: 20px 5px; }
+      footer { padding-top: 16px; padding-bottom: 28px; }
     }
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { transition-duration: .01ms !important; }
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
     }
   </style>
 </head>
 <body>
-  <main>
-    <header class="hero">
-      <img class="app-icon" src="assets/icon.png" alt="WiFi FTP Server app icon" width="104" height="104">
-      <h1>WiFi FTP Server</h1>
+  <main class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <img class="app-icon" src="assets/icon.png" alt="WiFi FTP Server app icon" width="96" height="96">
+      <h1 id="page-title">WiFi FTP Server</h1>
       <p class="intro">Move files between your Android phone and other devices, wirelessly and with ease.</p>
-      <a class="download" href="https://github.com/syedarmarz/WiFi-FTP-Server/releases/download/v1.0.0/WiFi-FTP-Server.apk">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M12 3v11m0 0 4-4m-4 4-4-4M4 17v3h16v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+      <a class="download" href="https://github.com/syedarmarz/WiFi-FTP-Server/releases/download/v1.0.0/WiFi-FTP-Server.apk" aria-label="Download WiFi FTP Server APK">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M4 17v3h16v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Download APK
       </a>
-      <a class="more-link" href="https://github.com/syedarmarz/WiFi-FTP-Server" target="_blank" rel="noopener noreferrer" aria-label="More information about WiFi FTP Server">More about the app</a>
-    </header>
+      <div class="star-row">
+        <a class="star-button" href="https://github.com/syedarmarz/WiFi-FTP-Server" target="_blank" rel="noopener noreferrer" aria-label="Star WiFi FTP Server on GitHub">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          Star on GitHub
+        </a>
+      </div>
+      <a class="more" href="https://github.com/syedarmarz/WiFi-FTP-Server" target="_blank" rel="noopener noreferrer">More about the app</a>
+    </section>
 
-    <div class="details" aria-label="App information">
-      <section>
-        <h2>Features</h2>
-        <p>Share files over Wi-Fi with FTP or FTPS. Use password access, choose which folder to share, and enable read-only mode when needed.</p>
+    <div class="about" id="about" aria-label="About WiFi FTP Server">
+      <section aria-labelledby="features-title">
+        <h2 id="features-title">Features</h2>
+        <p>Share selected folders over Wi-Fi with FTP or encrypted FTPS. Use password access, choose what to share, and enable read-only mode when needed.</p>
       </section>
-      <section>
-        <h2>Security</h2>
-        <p>FTP does not encrypt file transfers. Use FTPS for an encrypted connection, connect only on trusted networks, and stop the server when finished.</p>
-      </section>
-      <section>
-        <h2>Troubleshooting</h2>
-        <p>Keep both devices on the same Wi-Fi and check the server address and login details. Make sure file access is allowed. If the server stops, allow unrestricted battery use.</p>
-      </section>
-      <section>
-        <h2>Privacy</h2>
-        <p>No account is required, and the app has no ads, analytics or tracking. Your files are shared only with devices that connect to your server.</p>
+      <section aria-labelledby="privacy-title">
+        <h2 id="privacy-title">Privacy</h2>
+        <p>No account is required, and the app has no ads, analytics, or tracking. Your files are shared only with devices that connect to your server.</p>
       </section>
     </div>
-    <footer>Made with ♥️ by <a href="https://github.com/syedarmarz" target="_blank" rel="noopener noreferrer">Syed Armarz</a></footer>
+
+    <footer>
+      <span class="credit">Made with ♥️ by <a href="https://github.com/syedarmarz" target="_blank" rel="noopener noreferrer">Syed Armarz</a></span>
+    </footer>
   </main>
 </body>
 </html>

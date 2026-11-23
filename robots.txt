@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://syedarmarz.github.io/WiFi-FTP-Server/sitemap.xml
