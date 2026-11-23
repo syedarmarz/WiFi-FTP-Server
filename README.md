@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/icon.png" width="112" alt="WiFi FTP Server app icon">
+  <img src="assets/icon.png" width="112" alt="WiFi FTP Server app icon">
 </p>
 
 <h1 align="center">WiFi FTP Server</h1>
